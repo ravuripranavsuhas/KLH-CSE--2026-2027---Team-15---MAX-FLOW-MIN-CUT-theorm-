@@ -1,0 +1,21 @@
+Edge Capacity List
+
+Format: [Source Node] -> [Destination Node] : [Capacity]
+text
+s -> A : 16
+s -> B : 13
+A -> B : 10
+A -> C : 12
+B -> A : 4
+B -> D : 14
+C -> B : 9
+C -> t : 20
+D -> C : 7
+D -> t : 4
+
+
+The Minimum Cut Partition
+
+* Set S (Source side): {s, A, B, D}
+* Set T (Sink side): {C, t}
+* Edges cut: A -> C (12), D -> C (7), and D -> t (4) → 12 + 7 + 4 = 23
